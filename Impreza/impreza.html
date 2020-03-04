@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8"/>
+	<title>impreza</title>
+	<link rel="stylesheet" style="style.css"/>
+</head>
+<body>
+	<noscript>MUSISZ ZEZWOLIC NA ZABLOKOWANA ZAWARTOSC</noscript>
+	<div id="kontener">
+	<script>
+	
+		var wiek = prompt("Podaj swój wiek");
+		
+		if(wiek == ""){
+		document.write("Pole nie może pozostać puste")
+		}
+		else if(wiek == null){
+		document.write("Anulowano")
+		}
+		else if(wiek <= 17){
+		document.write('<h1>Nie ma imprezki młody!</h1> </br> <img src="depresja.gif"/>')
+		}
+		else if(isNaN(wiek)){
+		document.write("To musi być liczba!")
+		}
+		else{
+		
+		wiek = Number(wiek);
+		
+		document.write('<h1>Zapraszamy na imprezkę !<h1> <img src="impreza.gif"/>')
+		}
+		
+		// Zrobić nowy skrypt z przedziałami wiekowymi - trzy progi wiekowe do 18 od 18 do 21 od 21 do 30
+		
+		
+	
+	</script>
+	</div>
+</body>
+
+</html>
