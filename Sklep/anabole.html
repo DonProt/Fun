@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8"/>
+	<title>anabole</title>
+	<link rel="stylesheet" style="style.css"/>
+</head>
+<body>
+	<div id="kontener"/>
+	<noscript>ZEZWOL NA ZABLOKOWANA ZAWARTOSC</noscript>
+	<script>
+	
+		var wiek = prompt("podaj swój wiek");
+		
+		
+		if(wiek == ""){
+		document.write("Pole nie może być puste")
+		}
+		else if(wiek == null){
+		document.write("Anulowano zakupy")
+		}
+		else if(isNaN(wiek)){
+		document.write("Podaj wiek za pomocą cyfr")
+		}
+		else if(wiek <= 17){
+		document.write("Nie ma opcji na anaboliki chudy")
+		}
+		else if(wiek > 17 && wiek < 21){
+		document.write("Dla młodzieńca czeka stówka metki")
+		}
+		else if(wiek >= 21){
+		document.write("Zapraszamy na szprycę")
+		}
+		
+	
+	</script>
+</body>
+</html>
